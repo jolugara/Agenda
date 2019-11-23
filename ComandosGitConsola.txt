@@ -1,0 +1,43 @@
+CONSOLA GIT
+__________
+*||git init|| -> (dentro del proyecto[donde se creara la carpeta git])
+
+*||git remote add origin rutaEnlace|| -> (indicamos donde vamos a almacenar nuestro codigo)
+*||git push -u origin master|| -> (indicamos a que repositio y lo añadimos)
+
+*||git status|| -> (muestra el estado en el que esta el fichero en git)
+
+*||git add|| -> nombreFichero o *(para todos)(añade los ficheros al area 
+	       de trabajo o staying area)
+
+*||git commit|| -> (para crear un primer punto de comtrol de nuestro codigo)
+
+*||git commit -m "mensaje"|| -> (para odviar el cuadro de dialogo)
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+^^*SI NO TENEMOS AÑADIDO NUESTRO EMAIL Y NAME DE GITHUB LO AÑADIMOS*^^
+*||git commit --global user.email "example@example.com"|| -> (configurar email del usuario)
+
+*||git commit --global user.name "miUser"||
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+*||git log|| -> (para ver todos los commits que hemos creado)
+	       (El dashed(codigo)generado sirve para diferenciar 
+	        un commit de los otros)
+
+*||git checkout -- nombrearchivo.html|| -> (para revertir los cambios de los archivos)
+
+*||git diff intex.html|| -> (para ver las diferencias hechas en los archivos,
+algunos IDEs no hace falta)
+
+*Si queremos hacer que git ignore que no hemos añadido un archivo al workspace
+ podemos hacerlo:
+	- Creamos el archivo .gitignore en el directorio del proyecto.
+	- ingresamos el nombre.js que queremos ignorar o tipo de documento *.js
+	- .gitignore si podemos añadirlo al workspace o hacerle commit,
+	  indicara como cualquier otro archivo, cuando tiene cambios.	
+
+*||git branch login|| -> añadimos una rama.
+
+*||git checkout master|| -> para cambiar a la rama master.
