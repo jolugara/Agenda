@@ -9,6 +9,9 @@ import {FullCalendarModule} from 'primeng/fullcalendar';
 import { HeaderComponent } from './header/header.component';
 import { EventosComponent } from './calendario/eventos/eventos.component';
 import { NextEventsComponent } from './calendario/next-events/next-events.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SidenavComponent } from './sidenav/sidenav.component';
+import {MatSidenavModule} from "@angular/material/sidenav";
 
 @NgModule({
   declarations: [
@@ -16,12 +19,15 @@ import { NextEventsComponent } from './calendario/next-events/next-events.compon
     CalendarioComponent,
     HeaderComponent,
     EventosComponent,
-    NextEventsComponent
+    NextEventsComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FullCalendarModule
+    FullCalendarModule,
+    BrowserAnimationsModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
