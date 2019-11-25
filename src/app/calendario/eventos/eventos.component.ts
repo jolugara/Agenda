@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+// importo los modulos de fullcalendar
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
@@ -11,9 +11,10 @@ import interactionPlugin from '@fullcalendar/interaction';
 })
 export class EventosComponent implements OnInit {
   // array donde se guardaran los eventos
-  public events: any[];
+  public events: any[]; // Creo un array donde iran guardados los eventos.
   public options: any;
 
+  // Cargo en el constructor datos iniciales
   constructor() {
     this.events = [
       {
